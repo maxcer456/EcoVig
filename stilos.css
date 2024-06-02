@@ -1,38 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap');
-*{
-    margin: 0%;
-    padding: 0%;
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
 }
-body{
-        background: linear-gradient(rgb(138, 234, 140), black);
-        padding-bottom: 11px;
+body {
+  background: linear-gradient(rgb(138, 234, 140), black);
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
 }
 
-.contenedor{
+.contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 150%;
+  height: 90%;
+  background-color: rgb(138, 234, 140);
+  padding: 5%;
+  border-radius: 10%;
+  margin-top: 4%;
+  margin-right: 5%;
+}
+input {
+  margin: 15px;
+  padding: 1.5%;
+}
+.left,
+h1 {
+  width: 100%;
+  height: 10%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0%;
+  margin: 0%;
+}
+.titulos {
+  height: 100%;
+  width: 40%;
+  margin-top: 1%;
+  border-radius: 5%;
+  border: 5px solid rgb(45, 100, 45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(assets/Plantas\ para\ casa\ –\ as\ espécies\ ideais\ e\ seus\ benefícios.jpeg)
+    no-repeat;
+  background-size: cover;
+  margin-right: 8%;
+}
+h2 {
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-
-
+    text-align: center;
+    padding: 20% 50%;
+  font-size: 5rem;
+  font-family: Poetsen One, sans-serif;
+  
 }
-form{
-    display: flex;
-    flex-direction: column;
-    width: 60vh;
-    height: 90%;
-    background-color: rgb(138, 234, 140);
-    padding:5%;
-    border-radius: 10%;
-    margin-top: 4%;
-    margin-right: 5%;
+h1 {
+  font-family: poppins, sans-serif;
+  font-size: 50px;
+  display: flex;
+  justify-content: start;
 }
-input{
-    margin:15px;
-    padding: 1.5%;
+.silaba-1 {
+  color: #fff;
+}
+.silaba-2 {
+  color: rgb(12, 190, 12);
+}
+a {
+  margin-right: 1.5%;
+  margin-left: 1%;
+}
+input {
+  border: none;
+  border-bottom: 2px solid black;
+  color: black;
+  background: none;
+  display: block;
+  height: 15px;
+}
+svg:hover {
+  width: 60px;
+  height: 60px;
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  margin-left: 10px;
+}button{
+    background-color:rgb(138, 234, 140);
+    color: #fff;
+    padding: 10% 20%;
+    border-radius:50%;
+    border: none;
+}button:hover{
+    color: black;
+    background-color: yellow;
+    transition: 0.5s;
+    border-radius: 40%;
+}
 
-}
-.left, h1{
+@media (max-width: 700px) {
+  .left,
+  h1 {
     width: 100%;
     height: 10%;
     background-color: rgb(0, 0, 0);
@@ -40,49 +120,84 @@ input{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-.titulos{
-    height: 85vh;
-    width: 90vh;
+    margin-left: 0.5%;
+  }
+  svg {
+    width: 100%;
+    height: 100%;
+    margin-right: 0%;
+  }
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .titulos {
+    height: 30%;
+    width: 50%;
     margin-top: 1%;
     border-radius: 5%;
     border: 5px solid rgb(45, 100, 45);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(assets/Plantas\ para\ casa\ –\ as\ espécies\ ideais\ e\ seus\ benefícios.jpeg)no-repeat;
+    background: url(assets/Plantas\ para\ casa\ –\ as\ espécies\ ideais\ e\ seus\ benefícios.jpeg)
+      no-repeat;
     background-size: cover;
-    margin-right: 8%;
-}
-h2{
-    
-    font-size: 5rem;
+    margin-right: 0%;
+  }
+  h2 {
+    font-size: 2rem;
     text-align: center;
-    font-family: Poetsen One , sans-serif ;
-}
-h1{
-    font-family: poppins,sans-serif;
-    font-size: 50px;
+    font-family: Poetsen One, sans-serif;
+  }
+  h1 {
+    font-family: poppins, sans-serif;
+    font-size: 1rem;
     display: flex;
-    justify-content: start;
-}.silaba-1{
-    color: #fff;
-}.silaba-2{
-    color: rgb(12, 190, 12);
-}
-a{
-    margin-right: 1.5%;
+    justify-content: flex-start;
+  }
+  a {
+    margin-right: 0px;
     margin-left: 1%;
-}input{
+    height: 25px;
+    width: 25px;
+  }
+  input {
     border: none;
     border-bottom: 2px solid black;
     color: black;
     background: none;
     display: block;
-    height: 15px;
-}
-svg:hover{
-    width: 60px;
-    height: 60px;
-    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
+    height: 5px;
+    width: 90%;
+
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 100%;
+    background-color: rgb(138, 234, 140);
+    border-radius: 10%;
+    margin: 0%;
+  }
+  .left {
+    padding: 0%;
+    width: 100%;
+  }
+  body {
+    padding: 0%;
+    height: 100%;
+  }.inputs{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }}
