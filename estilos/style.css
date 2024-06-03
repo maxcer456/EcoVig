@@ -1,0 +1,66 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 99.9vh;
+    background: url(../assets/Agro\ sustentable_\ Una\ mirada\ sobre\ las\ proyecciones\ de\ siembra\ a\ 30\ años_InPixio.png)no-repeat;
+    background-size: cover;
+}.carta{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10%;
+    border-top: 2px solid #ffffff75;
+    border-right: 2px solid #ffffff75;
+    box-shadow: 5px 5px 12px #00000035;
+    border-radius: 10%;
+    overflow: hidden;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.5) );
+}form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}input{
+    margin-top: 5%;
+    font-size: 125%;
+    width: 75vh;
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    color: #ffffff;
+}.boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}input::placeholder{
+    font-style: italic;
+    color: #00f2ff;
+}
+#Regitrar{
+    background: linear-gradient(rgb(255, 247, 0),rgb(82, 184, 4));
+    height: 50px;
+    border-radius: 10px;
+    display: block;
+    color: initial;
+}
+#Regitrar:focus{
+    background: linear-gradient(rgb(82, 184, 4),rgb(255, 247, 0));
+    transition: 0.25s;
+}
+@media(max-width: 900px){
+.carta{
+    width: 100vh;
+    height: 65vh;
+}
+input{
+    width: 100%;
+}}
