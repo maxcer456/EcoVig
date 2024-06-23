@@ -69,6 +69,12 @@ button img{
 button{
     margin-left: 10px;
 }
+.menu-izquierdo{
+    display: none;
+}
+.exit{
+    display: none;
+}
 
 
 @media screen and (max-width:700px) {
@@ -96,7 +102,7 @@ button{
         top: 0%;
         right: 0;
         background-color: aliceblue;
-        padding: 2rem;
+        padding: 2.5rem;
         bottom: 0%;
         box-shadow: 0 0 0 100vmax rgb(0, 0, 5, .5);
     }
@@ -107,13 +113,28 @@ button{
     }
     nav ul{
         flex-direction: column;
-        align-items: end;
+        align-items: start;
     }
     li a{
         color: rgb(0, 0, 0);
     }
     .logo{
         display: none;
+    }
+    .menu-izquierdo, .exit{
+        display: block;
+        background:none;
+        border: none;
+    }
+    .menu-izquierdo img{
+        height: 40px;
+        width: auto;
+    }
+    .exit{
+        display: block;
+        height: 20px;
+        width: auto;
+
     }
     aside{
         opacity: 0%;
@@ -134,5 +155,15 @@ button{
         opacity: 1;
         visibility: visible;
         transition: 0.2s;
+    }
+    header{
+        display: flex;
+        justify-content: baseline;
+    }.block_search{
+        display: flex;
+        justify-content: center;
+    }
+    aside ul li{
+        margin: 10% 0%;
     }
 }
